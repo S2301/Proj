@@ -1,0 +1,23 @@
+<div>
+    <p>
+        Enter the first Value : <input type="number" placeholder="first Value" [(ngModel)] = "fValue">
+    </p>
+    <p>
+        Select the operation : 
+        <select [(ngModel)]="operand">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+    </p>
+    <p>
+        Enter the second Value : <input type="number" placeholder="second Value" [(ngModel)]="sValue">
+    </p>
+    <p>
+        <button (click)="onProcess()">Perform Operation</button>
+    </p>
+    <p>
+        The result is : {{result}}
+    </p>
+</div>
